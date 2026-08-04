@@ -13,11 +13,30 @@ const perks = [
 
 export function Join() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
   const [name, setName] = useState("");
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(false);
+    try {
+      const res = await fetch("https://formspree.io/f/mzeppeqg", {
+        method: "POST",
+        body: new FormData(e.currentTarget),
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const inputClass =
@@ -131,13 +150,20 @@ export function Join() {
 
                   <button
                     type="submit"
-                    className="label group w-full rounded-full bg-ember px-8 py-4 text-sm text-paper-light transition-all duration-300 hover:-translate-y-0.5 hover:bg-ember-deep sm:w-auto"
+                    disabled={submitting}
+                    className="label group w-full rounded-full bg-ember px-8 py-4 text-sm text-paper-light transition-all duration-300 hover:-translate-y-0.5 hover:bg-ember-deep disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
                   >
-                    {joinForm.submit}
+                    {submitting ? "Dropping…" : joinForm.submit}
                     <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">
                       →
                     </span>
                   </button>
+
+                  {error ? (
+                    <p className="label text-xs text-ember">
+                      something went wrong — try again, or email us directly.
+                    </p>
+                  ) : null}
                 </form>
               )}
             </div>
