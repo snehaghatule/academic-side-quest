@@ -17,7 +17,7 @@ export type Quest = {
 export const currentQuest = {
   number: "08",
   title: "Why We All Feel Like Everyone Else Has It Figured Out",
-  date: "Saturday, 16 August 2026 · 7:00 PM IST",
+  date: "Thursday, 13 August 2026 · 7:15 PM IST",
   tagline: "Social comparison, the spotlight effect, and our very loud inner critic.",
   description:
     "Everyone else seems calm, sorted, and together — so why aren't we? This month we're going down the rabbit hole of social comparison and the sneaky ways our brains inflate how put-together other people are.",
