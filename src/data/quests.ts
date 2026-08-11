@@ -87,6 +87,15 @@ export const previousQuests: Quest[] = [
   },
 ];
 
+/* ------------------------------- founder -------------------------------- */
+
+export const founder = {
+  name: "Your Name",
+  role: "founder & chief rabbit-hole diver",
+  photo: "",
+  bio: "Replace this with your story — who you are, why you started Academic Side Quest, and the question that started it all. This is your space to introduce yourself to everyone who lands on this page.",
+};
+
 /* ------------------------------ join form ------------------------------- */
 
 export const joinForm = {
