@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 const footerLinks = [
-  { label: "The Main Character Page", href: "#top" },
-  { label: "The Lore", href: "#about" },
-  { label: "What's Cooking?", href: "#current" },
-  { label: "Previous Spirals", href: "#quests" },
-  { label: "Unlock Access", href: "#join" },
+  { label: "The Main Character Page", href: "/" },
+  { label: "The Lore", href: "/about" },
+  { label: "What's Cooking?", href: "/current" },
+  { label: "Previous Spirals", href: "/archive" },
+  { label: "Unlock Access", href: "/join" },
 ];
 
 const socials = [
@@ -35,12 +37,12 @@ export function Footer() {
               <ul className="mt-5 space-y-3">
                 {footerLinks.map((l) => (
                   <li key={l.href}>
-                    <a
+                    <Link
                       href={l.href}
                       className="link-underline label text-[0.7rem] text-ink-soft transition-colors hover:text-ember"
                     >
                       {l.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -78,12 +80,12 @@ export function Footer() {
           <p className="label text-xs text-mist/70">
             © {new Date().getFullYear()} Academic Side Quest
           </p>
-          <a
-            href="#top"
+          <Link
+            href="/"
             className="link-underline label text-xs text-ink-soft transition-colors hover:text-ember"
           >
-            back to the top ↑
-          </a>
+            back to the start ↑
+          </Link>
         </div>
       </div>
     </footer>

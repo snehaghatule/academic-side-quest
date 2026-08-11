@@ -29,7 +29,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Academic Side Quest — where curiosity turns into conversations",
+  title: {
+    default: "Academic Side Quest — where curiosity turns into conversations",
+    template: "%s · Academic Side Quest",
+  },
   description:
     "A twice-a-month community exploring psychology research, human behaviour, and ideas worth obsessing over. Come for the papers, stay for the rabbit holes.",
 };

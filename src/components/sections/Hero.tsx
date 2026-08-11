@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import { currentQuest, hero } from "@/data/quests";
 
@@ -58,39 +59,42 @@ export function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-5">
-            <a
-              href="#join"
+            <Link
+              href="/join"
               className="label group rounded-full bg-ember px-8 py-4 text-sm text-paper-light transition-all duration-300 hover:-translate-y-0.5 hover:bg-ember-deep"
             >
               {hero.cta}
               <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>
-            </a>
-            <a
-              href="#quests"
+            </Link>
+            <Link
+              href="/archive"
               className="link-underline label text-sm text-ink-soft transition-colors hover:text-ink"
             >
               browse the archive ↓
-            </a>
+            </Link>
           </div>
         </motion.div>
 
         {/* next quest teaser */}
-        <motion.a
-          href="#current"
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.9, delay: 0.55 }}
-          className="mt-12 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-line pt-5"
         >
-          <span className="label text-xs text-ember">what&apos;s cooking? #{currentQuest.number}</span>
-          <span className="hidden h-px w-8 bg-line sm:block" />
-          <span className="text-sm text-mist">{currentQuest.date}</span>
-          <span className="font-accent italic text-base text-ink-soft">
-            {currentQuest.title}
-          </span>
-        </motion.a>
+          <Link
+            href="/current"
+            className="mt-12 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-line pt-5"
+          >
+            <span className="label text-xs text-ember">what&apos;s cooking? #{currentQuest.number}</span>
+            <span className="hidden h-px w-8 bg-line sm:block" />
+            <span className="text-sm text-mist">{currentQuest.date}</span>
+            <span className="font-accent italic text-base text-ink-soft">
+              {currentQuest.title}
+            </span>
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

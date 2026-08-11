@@ -1,4 +1,5 @@
 import { currentQuest } from "@/data/quests";
+import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/sections/SectionHeading";
 
@@ -52,15 +53,15 @@ export function CurrentQuest() {
 
             <Reveal delay={0.16}>
               <div className="mt-10">
-                <a
-                  href="#join"
+                <Link
+                  href="/join"
                   className="label group inline-block rounded-full bg-ember px-8 py-4 text-sm text-paper-light transition-all duration-300 hover:-translate-y-0.5 hover:bg-ember-deep"
                 >
                   {currentQuest.registerLabel}
                   <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
-                </a>
+                </Link>
               </div>
             </Reveal>
           </div>

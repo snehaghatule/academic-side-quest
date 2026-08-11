@@ -1,18 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
 const links = [
-  { label: "The Main Character Page", short: "Home", href: "#top" },
-  { label: "The Lore", short: "The Lore", href: "#about" },
-  { label: "What's Cooking?", short: "What's Cooking?", href: "#current" },
-  { label: "Previous Spirals", short: "The Archive", href: "#quests" },
+  { label: "The Main Character Page", short: "Home", href: "/" },
+  { label: "The Lore", short: "The Lore", href: "/about" },
+  { label: "What's Cooking?", short: "What's Cooking?", href: "/current" },
+  { label: "Previous Spirals", short: "The Archive", href: "/archive" },
 ];
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -20,6 +23,10 @@ export function Navigation() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -38,30 +45,37 @@ export function Navigation() {
         }`}
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
-          <a
-            href="#top"
+          <Link
+            href="/"
             onClick={() => setOpen(false)}
             className="label text-sm text-ink transition-colors hover:text-ember sm:text-base"
           >
             Academic Side <em className="font-accent lowercase italic">Quest</em>
-          </a>
+          </Link>
 
           <div className="hidden items-center gap-9 lg:flex">
-            {links.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="link-underline label text-[0.7rem] text-mist transition-colors hover:text-ink"
-              >
-                {link.short}
-              </a>
-            ))}
-            <a
-              href="#join"
+            {links.map((link) => {
+              const active =
+                link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  aria-current={active ? "page" : undefined}
+                  className={`link-underline label text-[0.7rem] transition-colors ${
+                    active ? "text-ink" : "text-mist hover:text-ink"
+                  }`}
+                >
+                  {link.short}
+                </Link>
+              );
+            })}
+            <Link
+              href="/join"
               className="label rounded-full bg-ember px-5 py-2.5 text-[0.7rem] text-paper-light transition-all duration-300 hover:-translate-y-0.5 hover:bg-ember-deep"
             >
               Unlock Access
-            </a>
+            </Link>
           </div>
 
           <button
@@ -95,29 +109,46 @@ export function Navigation() {
             className="fixed inset-0 z-40 flex flex-col justify-center bg-paper px-8 lg:hidden"
           >
             <div className="flex flex-col gap-5">
-              {links.map((link, i) => (
-                <motion.a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  initial={{ opacity: 0, y: 24 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.06 * i, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                  className="display text-3xl font-bold uppercase leading-tight text-ink transition-colors hover:text-ember"
-                >
-                  {link.label}
-                </motion.a>
-              ))}
-              <motion.a
-                href="#join"
-                onClick={() => setOpen(false)}
+              {links.map((link, i) => {
+                const active =
+                  link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+                return (
+                  <motion.div
+                    key={link.href}
+                    initial={{ opacity: 0, y: 24 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.06 * i, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                  >
+                    <Link
+                      href={link.href}
+                      onClick={() => setOpen(false)}
+                      aria-current={active ? "page" : undefined}
+                      className={`display block text-3xl font-bold uppercase leading-tight transition-colors ${
+                        active ? "text-ember" : "text-ink hover:text-ember"
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                );
+              })}
+              <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.06 * links.length, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                className="label mt-5 rounded-full bg-ember px-6 py-3.5 text-center text-sm text-paper-light"
+                transition={{
+                  delay: 0.06 * links.length,
+                  duration: 0.5,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
               >
-                Unlock Access
-              </motion.a>
+                <Link
+                  href="/join"
+                  onClick={() => setOpen(false)}
+                  className="label mt-5 block rounded-full bg-ember px-6 py-3.5 text-center text-sm text-paper-light"
+                >
+                  Unlock Access
+                </Link>
+              </motion.div>
             </div>
           </motion.div>
         ) : null}
