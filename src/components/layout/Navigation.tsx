@@ -48,7 +48,7 @@ export function Navigation() {
           <Link
             href="/"
             onClick={() => setOpen(false)}
-            className="label text-sm text-ink transition-colors hover:text-ember sm:text-base"
+            className="label label-nav-lg text-ink transition-colors hover:text-ember"
           >
             Academic Side <em className="font-accent lowercase italic">Quest</em>
           </Link>
@@ -62,7 +62,7 @@ export function Navigation() {
                   key={link.href}
                   href={link.href}
                   aria-current={active ? "page" : undefined}
-                  className={`link-underline label text-[0.7rem] transition-colors ${
+                  className={`link-underline label label-nav transition-colors ${
                     active ? "text-ink" : "text-mist hover:text-ink"
                   }`}
                 >
@@ -72,7 +72,7 @@ export function Navigation() {
             })}
             <Link
               href="/join"
-              className="label rounded-full bg-ember px-5 py-2.5 text-[0.7rem] text-paper-light transition-all duration-300 hover:-translate-y-0.5 hover:bg-ember-deep"
+              className="label label-nav rounded-full bg-ember px-5 py-2.5 text-paper-light transition-all duration-300 hover:-translate-y-0.5 hover:bg-ember-deep"
             >
               Unlock Access
             </Link>
@@ -144,7 +144,7 @@ export function Navigation() {
                 <Link
                   href="/join"
                   onClick={() => setOpen(false)}
-                  className="label mt-5 block rounded-full bg-ember px-6 py-3.5 text-center text-sm text-paper-light"
+                  className="label label-nav mt-5 block rounded-full bg-ember px-6 py-3.5 text-center text-paper-light"
                 >
                   Unlock Access
                 </Link>

@@ -83,6 +83,15 @@
     font-size: 1.05rem;
   }
 
+  /* header nav label sizes (defined after .label so they override it) */
+  .label-nav {
+    font-size: 0.9rem;
+  }
+
+  .label-nav-lg {
+    font-size: 1.1rem;
+  }
+
   /* statement display type */
   .display {
     font-family: var(--font-display);
