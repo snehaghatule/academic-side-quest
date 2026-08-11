@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Founder } from "@/components/sections/Founder";
 
 export const metadata: Metadata = {
-  title: "The Founder",
+  title: "The Lore",
   description: "The human behind the Academic Side Quest rabbit hole.",
 };
 

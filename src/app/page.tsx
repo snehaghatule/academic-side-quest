@@ -5,7 +5,7 @@ import { About } from "@/components/sections/About";
 const explore = [
   {
     num: "01",
-    label: "The Founder",
+    label: "The Lore",
     href: "/about",
     copy: "the human behind the rabbit hole",
   },

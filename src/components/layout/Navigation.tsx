@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const links = [
   { label: "The Main Character Page", short: "Home", href: "/" },
-  { label: "The Founder", short: "The Founder", href: "/about" },
+  { label: "The Lore", short: "The Lore", href: "/about" },
   { label: "What's Cooking?", short: "What's Cooking?", href: "/current" },
   { label: "Previous Spirals", short: "The Archive", href: "/archive" },
 ];

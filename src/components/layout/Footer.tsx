@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const footerLinks = [
   { label: "The Main Character Page", href: "/" },
-  { label: "The Founder", href: "/about" },
+  { label: "The Lore", href: "/about" },
   { label: "What's Cooking?", href: "/current" },
   { label: "Previous Spirals", href: "/archive" },
   { label: "Unlock Access", href: "/join" },

@@ -9,7 +9,7 @@ export function Founder() {
         <Reveal>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
             <span className="label text-ember">01 /</span>
-            <span className="label text-mist">the founder</span>
+            <span className="label text-mist">the lore</span>
           </div>
         </Reveal>
 
