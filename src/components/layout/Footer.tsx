@@ -19,7 +19,7 @@ export function Footer() {
             <p className="label text-mist">a twice-a-month rabbit hole</p>
             <p className="display mt-5 max-w-md text-3xl font-bold uppercase leading-[1.05] sm:text-4xl">
               See you at the{" "}
-              <em className="font-accent lowercase italic text-ember">next quest.</em>
+              <em className="font-serif italic text-ember">next quest.</em>
             </p>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-mist">
               one topic. one hour. not a cult.
