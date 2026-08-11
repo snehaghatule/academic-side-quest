@@ -90,10 +90,10 @@ export const previousQuests: Quest[] = [
 /* ------------------------------- founder -------------------------------- */
 
 export const founder = {
-  name: "Your Name",
+  name: "Sneha Ghatule",
   role: "founder & chief rabbit-hole diver",
   photo: "/images/founder.jpg",
-  bio: "Replace this with your story — who you are, why you started Academic Side Quest, and the question that started it all. This is your space to introduce yourself to everyone who lands on this page.",
+  bio: "Academic Side Quest started with a single question — 'wait... but why?' — and a person who couldn't stop asking it. I read papers for fun, collect rabbit holes, and believe the best ideas come from people brave enough to say 'okay but hear me out'.",
 };
 
 /* ------------------------------ join form ------------------------------- */
