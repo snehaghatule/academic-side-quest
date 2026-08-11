@@ -7,14 +7,14 @@ export function Founder() {
     <section className="bg-paper px-5 pb-40 pt-44 sm:px-8 md:pb-56 md:pt-64">
       <div className="mx-auto max-w-7xl">
         <Reveal>
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3">
             <span className="label label-large text-ember">01 /</span>
             <span className="label label-large text-mist">the lore</span>
           </div>
         </Reveal>
 
         <div className="mx-auto mt-20 flex max-w-fit flex-col items-center gap-16 lg:mt-24 lg:flex-row lg:items-center lg:gap-20">
-          <div className="w-full max-w-[416px] lg:w-[416px]">
+          <div className="w-full max-w-[500px] lg:w-[500px]">
             <Reveal>
               {founder.photo ? (
                 <Image
