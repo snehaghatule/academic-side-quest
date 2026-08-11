@@ -92,7 +92,7 @@ export const previousQuests: Quest[] = [
 export const founder = {
   name: "Your Name",
   role: "founder & chief rabbit-hole diver",
-  photo: "",
+  photo: "/images/founder.jpg",
   bio: "Replace this with your story — who you are, why you started Academic Side Quest, and the question that started it all. This is your space to introduce yourself to everyone who lands on this page.",
 };
 
