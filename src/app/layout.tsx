@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import { CursorGlow } from "@/components/ui/CursorGlow";
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 
@@ -45,7 +44,6 @@ export default function RootLayout({
       <body
         className={`${archivo.variable} ${inter.variable} ${playfair.variable} font-body antialiased`}
       >
-        <CursorGlow />
         <Navigation />
         <main>{children}</main>
         <Footer />
