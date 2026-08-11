@@ -35,14 +35,14 @@ export function About() {
                     the plot
                   </span>
                 </div>
-                <h2 className="display mt-6 text-6xl font-bold uppercase leading-[0.95] tracking-[-0.02em] text-ember sm:text-7xl md:text-8xl">
+                <h2 className="display mt-6 text-5xl font-bold uppercase leading-[0.95] tracking-[-0.02em] text-ember sm:text-6xl md:text-7xl">
                   Once upon a time,
                   <br />
-                  <span className="text-5xl sm:text-6xl md:text-7xl">
+                  <span className="text-4xl sm:text-5xl md:text-6xl">
                     ...someone asked,
                   </span>
                   <br />
-                  <em className="font-accent lowercase italic text-ink">
+                  <em className="font-accent text-6xl lowercase italic text-ink sm:text-7xl md:text-8xl">
                     &ldquo;Wait... but why?&rdquo;
                   </em>
                 </h2>
