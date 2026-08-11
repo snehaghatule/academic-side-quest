@@ -39,10 +39,10 @@ export function Founder() {
               <h3 className="display text-4xl font-bold uppercase leading-[0.9] tracking-[-0.01em] text-ink sm:text-5xl md:text-7xl">
                 {founder.name}
               </h3>
-              <p className="font-accent mt-8 text-2xl uppercase italic leading-none text-ember sm:text-3xl">
+              <p className="font-accent mt-4 text-2xl uppercase italic leading-none text-ember sm:text-3xl">
                 {founder.role}
               </p>
-              <div className="mt-16 max-w-xl">
+              <div className="mt-8 max-w-xl">
                 {founder.bio.map((paragraph, i) => {
                   const parts = paragraph.split("Academic Side Quest");
                   return (
