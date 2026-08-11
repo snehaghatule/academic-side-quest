@@ -40,9 +40,18 @@ export function Founder() {
                 {founder.name}
               </h3>
               <p className="label mt-4 text-ember">{founder.role}</p>
-              <p className="mt-8 max-w-xl text-lg leading-relaxed text-mist">
-                {founder.bio}
-              </p>
+              <div className="mt-8 max-w-xl">
+                {founder.bio.map((paragraph, i) => (
+                  <p
+                    key={i}
+                    className={`leading-relaxed text-mist ${
+                      i === 0 ? "text-lg" : "mt-5 text-base"
+                    }`}
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </Reveal>
           </div>
         </div>
