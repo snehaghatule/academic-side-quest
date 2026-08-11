@@ -36,11 +36,13 @@ export function Founder() {
 
           <div className="flex flex-col justify-center lg:col-span-7">
             <Reveal>
-              <h3 className="display text-3xl font-bold uppercase leading-tight text-ink sm:text-4xl md:text-5xl">
+              <h3 className="display text-3xl font-bold uppercase leading-[0.95] tracking-[-0.01em] text-ink sm:text-4xl md:text-5xl">
                 {founder.name}
               </h3>
-              <p className="label mt-4 text-ember">{founder.role}</p>
-              <div className="mt-8 max-w-xl">
+              <p className="display mt-6 text-2xl font-bold uppercase leading-none tracking-[0.12em] text-ember sm:text-3xl">
+                {founder.role}
+              </p>
+              <div className="mt-10 max-w-xl">
                 {founder.bio.map((paragraph, i) => (
                   <p
                     key={i}
