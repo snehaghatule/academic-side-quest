@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { About } from "@/components/sections/About";
+import { Founder } from "@/components/sections/Founder";
 
 export const metadata: Metadata = {
-  title: "The Lore",
-  description:
-    "Once upon a time... what Academic Side Quest is, how it works, and why we keep asking questions.",
+  title: "The Founder",
+  description: "The human behind the Academic Side Quest rabbit hole.",
 };
 
 export default function AboutPage() {
-  return <About />;
+  return <Founder />;
 }

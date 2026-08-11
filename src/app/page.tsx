@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
+import { About } from "@/components/sections/About";
 
 const explore = [
   {
     num: "01",
-    label: "The Lore",
+    label: "The Founder",
     href: "/about",
-    copy: "what this rabbit hole actually is",
+    copy: "the human behind the rabbit hole",
   },
   {
     num: "02",
@@ -26,6 +27,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <About />
       <section className="bg-paper px-5 pb-24 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <p className="label text-mist">enter the rabbit hole</p>
