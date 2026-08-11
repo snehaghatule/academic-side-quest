@@ -48,8 +48,8 @@ export function Join() {
         <div className="lg:col-span-5">
           <Reveal>
             <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
-              <span className="label text-ember">04 /</span>
-              <span className="label text-mist">join the community</span>
+              <span className="label label-large text-ember">04 /</span>
+              <span className="label label-large text-mist">join the community</span>
             </div>
             <h2 className="display mt-6 text-5xl font-bold uppercase leading-[0.95] tracking-[-0.02em] text-ember sm:text-6xl md:text-7xl">
               Enter the
