@@ -26,19 +26,17 @@ export function About() {
     >
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-16 lg:grid-cols-12 lg:gap-10">
-          {/* sticky statement */}
+          {/* sticky statement + intro */}
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-32">
               <Reveal>
-                <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
-                  <span className="display text-3xl font-bold uppercase leading-none tracking-[-0.02em] text-mist sm:text-4xl">
-                    the plot
-                  </span>
-                </div>
-                <h2 className="display mt-6 text-5xl font-bold uppercase leading-[0.95] tracking-[-0.02em] text-ember sm:text-6xl md:text-7xl">
+                <span className="display text-3xl font-bold uppercase leading-none tracking-[-0.02em] text-mist sm:text-4xl">
+                  the plot
+                </span>
+                <h2 className="display mt-6 text-6xl font-bold uppercase leading-[0.95] tracking-[-0.02em] text-ember sm:text-7xl md:text-8xl">
                   Once upon a time,
                   <br />
-                  <span className="text-4xl sm:text-5xl md:text-6xl">
+                  <span className="text-5xl sm:text-6xl md:text-7xl">
                     ...someone asked,
                   </span>
                   <br />
@@ -47,20 +45,19 @@ export function About() {
                   </em>
                 </h2>
               </Reveal>
+              <Reveal>
+                <p className="mt-10 text-balance text-2xl leading-snug text-ink-soft sm:text-[1.7rem]">
+                  Academic Side Quest is a community where we meet twice a month to explore
+                  psychology research, human behaviour, and ideas that make us pause,
+                  question, and want to know more.
+                </p>
+              </Reveal>
             </div>
           </div>
 
-          {/* flowing editorial copy + index rows */}
+          {/* pillar rows */}
           <div className="lg:col-span-7">
-            <Reveal>
-              <p className="text-balance text-2xl leading-snug text-ink-soft sm:text-[1.7rem]">
-                Academic Side Quest is a community where we meet twice a month to explore
-                psychology research, human behaviour, and ideas that make us pause,
-                question, and want to know more.
-              </p>
-            </Reveal>
-
-            <div className="mt-16 border-t border-line">
+            <div className="border-t border-line">
               {pillars.map((pillar, i) => (
                 <Reveal key={pillar.number} delay={0.06 * i}>
                   <div
