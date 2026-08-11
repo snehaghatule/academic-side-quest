@@ -93,17 +93,44 @@ export const founder = {
   name: "Sneha Ghatule",
   role: "founder & curious human",
   photo: "/images/founder.jpg",
-  bio: [
-    "Hi, I've always loved teaching, mostly because it gives me an excuse to keep learning.",
-    "Over the last few years, I've taught psychology in higher education, worked in mental health, developed curricula, and, most importantly, had conversations with students that rarely stayed neatly inside the syllabus.",
-    "Psychology refuses to stay where you put it. It is less a collection of settled facts than a set of complex, evolving models for understanding why people feel, relate, and suffer the way they do. And the best way to learn it, is by wrestling with those ideas out loud.",
-    "In June 2025, I started a psychology club at the college where I taught. Apparently, the conversations were getting a little too interesting to leave in the classroom.",
-    "When I eventually left the institution, I assumed those conversations would end too.",
-    'Instead, my students asked, "Can we still meet?"',
-    "So we did.",
-    "What began as an informal psychology club grew into a small research community that now meets twice a month to read papers, unpack ideas, challenge assumptions, share questions, and occasionally disappear spectacularly far down a research rabbit hole.",
-    "I've always told my students that the moment you work up the nerve to ask a 'stupid' question, it stops being one. It becomes a question the whole room gets to think about.",
-    "That, really, is the point of this space. Welcome to Academic Side Quest.",
+  story: [
+    {
+      number: "01",
+      title: "the classroom",
+      blocks: [
+        "Hi, I've always loved teaching, mostly because it gives me an excuse to keep learning.",
+        "Over the last few years, I've taught psychology in higher education, worked in mental health, developed curricula, and, most importantly, had conversations with students that rarely stayed neatly inside the syllabus.",
+      ],
+    },
+    {
+      number: "02",
+      title: "the rabbit hole",
+      blocks: [
+        "Psychology refuses to stay where you put it.",
+        "It is less a collection of settled facts than a set of complex, evolving models for understanding why people feel, relate, and suffer the way they do. And the best way to learn it, I've found, is by wrestling with those ideas out loud.",
+      ],
+    },
+    {
+      number: "03",
+      title: "the club",
+      blocks: [
+        "In June 2025, I started a psychology club at the college where I taught.",
+        "Apparently, the conversations were getting a little too interesting to leave in the classroom.",
+        "When I eventually left the institution, I assumed those conversations would end too.",
+        "Instead, my students asked:",
+        { quote: "Can we still meet?" },
+        "So we did.",
+      ],
+    },
+    {
+      number: "04",
+      title: "the side quest",
+      blocks: [
+        "What began as an informal psychology club grew into a small research community that now meets twice a month to read papers, unpack ideas, challenge assumptions, share questions, and occasionally disappear spectacularly far down a research rabbit hole.",
+        "I've always told my students that the moment you work up the nerve to ask a 'stupid' question, it stops being one. It becomes a question the whole room gets to think about.",
+        "That, really, is the point of this space. Welcome to Academic Side Quest.",
+      ],
+    },
   ],
 };
 

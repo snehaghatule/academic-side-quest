@@ -1,6 +1,21 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 import { founder } from "@/data/quests";
 import { Reveal } from "@/components/ui/Reveal";
+
+function renderParagraph(text: string): ReactNode {
+  const parts = text.split("Academic Side Quest");
+  if (parts.length < 2) return text;
+  return (
+    <>
+      {parts[0]}
+      <span className="display font-bold uppercase text-ink">
+        Academic Side Quest
+      </span>
+      {parts[1]}
+    </>
+  );
+}
 
 export function Founder() {
   return (
@@ -13,7 +28,7 @@ export function Founder() {
           </div>
         </Reveal>
 
-        <div className="mt-16 grid gap-16 lg:grid-cols-12 lg:gap-20">
+        <div className="mt-16 grid items-start gap-14 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
             <Reveal>
               {founder.photo ? (
@@ -22,10 +37,10 @@ export function Founder() {
                   alt={founder.name}
                   width={800}
                   height={1000}
-                  className="aspect-[4/5] w-full border border-line object-cover"
+                  className="aspect-[4/5] w-full max-w-[340px] border border-line object-cover"
                 />
               ) : (
-                <div className="flex aspect-[4/5] w-full items-center justify-center border border-dashed border-line bg-card p-8">
+                <div className="flex aspect-[4/5] w-full max-w-[340px] items-center justify-center border border-dashed border-line bg-card p-8">
                   <p className="label max-w-[16rem] text-center text-mist/70">
                     your photo goes here — add one and it appears in this frame
                   </p>
@@ -34,41 +49,48 @@ export function Founder() {
             </Reveal>
           </div>
 
-          <div className="flex flex-col justify-center lg:col-span-7">
+          <div className="lg:col-span-7 lg:pt-6">
             <Reveal>
-              <h3 className="display text-4xl font-bold uppercase leading-[0.9] tracking-[-0.01em] text-ink sm:text-5xl md:text-7xl">
+              <h1 className="display text-4xl font-bold uppercase leading-[0.9] tracking-[-0.01em] text-ink sm:text-5xl md:text-[3.5rem]">
                 {founder.name}
-              </h3>
-              <p className="font-accent mt-4 text-2xl uppercase italic leading-none text-ember sm:text-3xl">
+              </h1>
+              <p className="font-accent mt-4 text-lg italic text-ember sm:text-xl">
                 {founder.role}
               </p>
-              <div className="mt-8 max-w-xl">
-                {founder.bio.map((paragraph, i) => {
-                  const parts = paragraph.split("Academic Side Quest");
-                  return (
-                    <p
-                      key={i}
-                      className={`text-base leading-relaxed text-mist ${
-                        i === 0 ? "" : "mt-6"
-                      }`}
-                    >
-                      {parts.length > 1 ? (
-                        <>
-                          {parts[0]}
-                          <span className="display font-bold uppercase text-ink">
-                            Academic Side Quest
-                          </span>
-                          {parts[1]}
-                        </>
-                      ) : (
-                        paragraph
-                      )}
-                    </p>
-                  );
-                })}
-              </div>
             </Reveal>
           </div>
+        </div>
+
+        <div className="mt-24 max-w-2xl lg:mt-32">
+          {founder.story.map((section, i) => (
+            <Reveal key={section.number} className={i === 0 ? "" : "mt-20 lg:mt-24"}>
+              <div className="flex items-baseline gap-3">
+                <span className="label text-ember">{section.number} —</span>
+                <span className="label text-mist">{section.title}</span>
+              </div>
+              <div className="mt-8">
+                {section.blocks.map((block, j) => (
+                  <div key={j}>
+                    {typeof block === "string" ? (
+                      <p
+                        className={`text-base leading-relaxed text-mist ${
+                          j === 0 ? "" : "mt-6"
+                        }`}
+                      >
+                        {renderParagraph(block)}
+                      </p>
+                    ) : (
+                      <blockquote className="my-14 border-l-2 border-ember py-2 pl-8 sm:pl-10">
+                        <p className="font-accent text-3xl italic leading-snug text-ink sm:text-4xl md:text-5xl">
+                          “{block.quote}”
+                        </p>
+                      </blockquote>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>
