@@ -11,7 +11,7 @@ export function CurrentQuest() {
           index="02"
           label="what's cooking?"
           title="Current Quest"
-          description="The session we're gathering for next. Everything is editable in one place."
+          description="The session we're gathering for next."
         />
 
         <div className="mt-16 grid gap-14 border-t border-line pt-16 lg:grid-cols-12 lg:gap-16">
