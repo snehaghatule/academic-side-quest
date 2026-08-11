@@ -1,8 +1,3 @@
-/* ------------------------------------------------------------------
- *  All editable content lives here.
- *  Update a quest, swap a resource, change a title — no code needed.
- * ------------------------------------------------------------------ */
-
 export type Quest = {
   number: string;
   title: string;
