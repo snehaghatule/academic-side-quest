@@ -86,12 +86,6 @@ export function About() {
                 </Reveal>
               ))}
             </div>
-
-            <Reveal delay={0.1}>
-              <p className="mt-8 text-sm text-mist">
-                one topic. one hour. not a cult.
-              </p>
-            </Reveal>
           </div>
         </div>
       </div>
