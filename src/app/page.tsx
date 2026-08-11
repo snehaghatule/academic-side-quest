@@ -27,11 +27,25 @@ export default function Home() {
   return (
     <>
       <Hero />
+
+      {/* photograph space */}
+      <section className="bg-paper px-5 sm:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex aspect-[3/2] w-full items-center justify-center border border-dashed border-line bg-card/60">
+            <p className="label max-w-xs text-center text-mist/70">
+              a photograph will live here
+            </p>
+          </div>
+        </div>
+      </section>
+
       <About />
       <section className="bg-paper px-5 pb-24 sm:px-8">
         <div className="mx-auto max-w-7xl">
-          <p className="label text-mist">enter the rabbit hole</p>
-          <div className="mt-6 grid gap-px overflow-hidden border border-line bg-line sm:grid-cols-3">
+          <p className="label label-large text-center text-mist">
+            enter the rabbit hole
+          </p>
+          <div className="mt-8 grid gap-px overflow-hidden border border-line bg-line sm:grid-cols-3">
             {explore.map((e) => (
               <Link
                 key={e.href}
