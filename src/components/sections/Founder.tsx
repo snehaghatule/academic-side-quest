@@ -39,7 +39,7 @@ export function Founder() {
               <h3 className="display text-4xl font-bold uppercase leading-[0.9] tracking-[-0.01em] text-ink sm:text-5xl md:text-7xl">
                 {founder.name}
               </h3>
-              <p className="font-accent mt-8 text-3xl italic leading-none text-ember sm:text-4xl">
+              <p className="font-accent mt-8 text-2xl uppercase italic leading-none text-ember sm:text-3xl">
                 {founder.role}
               </p>
               <div className="mt-16 max-w-xl">
