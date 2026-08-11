@@ -8,11 +8,7 @@ const footerLinks = [
   { label: "Unlock Access", href: "/join" },
 ];
 
-const socials = [
-  { label: "Instagram", href: "#" },
-  { label: "Substack", href: "#" },
-  { label: "Discord", href: "#" },
-];
+const socials = [{ label: "Substack", href: "#" }];
 
 export function Footer() {
   return (
