@@ -7,7 +7,7 @@ const explore = [
     num: "01",
     label: "The Lore",
     href: "/about",
-    copy: "the human behind the rabbit hole",
+    copy: "story behind the rabbit hole",
   },
   {
     num: "02",
