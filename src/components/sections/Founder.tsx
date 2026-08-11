@@ -4,7 +4,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Founder() {
   return (
-    <section className="bg-paper px-5 py-28 sm:px-8 md:py-36">
+    <section className="bg-paper px-5 py-32 sm:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
         <Reveal>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
@@ -13,7 +13,7 @@ export function Founder() {
           </div>
         </Reveal>
 
-        <div className="mt-12 grid gap-12 lg:grid-cols-12 lg:gap-16">
+        <div className="mt-16 grid gap-16 lg:grid-cols-12 lg:gap-20">
           <div className="lg:col-span-5">
             <Reveal>
               {founder.photo ? (
@@ -36,23 +36,36 @@ export function Founder() {
 
           <div className="flex flex-col justify-center lg:col-span-7">
             <Reveal>
-              <h3 className="display text-3xl font-bold uppercase leading-[0.95] tracking-[-0.01em] text-ink sm:text-4xl md:text-5xl">
+              <h3 className="display text-4xl font-bold uppercase leading-[0.9] tracking-[-0.01em] text-ink sm:text-5xl md:text-7xl">
                 {founder.name}
               </h3>
-              <p className="font-accent mt-6 text-2xl italic leading-none text-ember sm:text-3xl">
+              <p className="font-accent mt-8 text-3xl italic leading-none text-ember sm:text-4xl">
                 {founder.role}
               </p>
-              <div className="mt-10 max-w-xl">
-                {founder.bio.map((paragraph, i) => (
-                  <p
-                    key={i}
-                    className={`leading-relaxed text-mist ${
-                      i === 0 ? "text-lg" : "mt-5 text-base"
-                    }`}
-                  >
-                    {paragraph}
-                  </p>
-                ))}
+              <div className="mt-16 max-w-xl">
+                {founder.bio.map((paragraph, i) => {
+                  const parts = paragraph.split("Academic Side Quest");
+                  return (
+                    <p
+                      key={i}
+                      className={`text-base leading-relaxed text-mist ${
+                        i === 0 ? "" : "mt-6"
+                      }`}
+                    >
+                      {parts.length > 1 ? (
+                        <>
+                          {parts[0]}
+                          <span className="display font-bold uppercase text-ink">
+                            Academic Side Quest
+                          </span>
+                          {parts[1]}
+                        </>
+                      ) : (
+                        paragraph
+                      )}
+                    </p>
+                  );
+                })}
               </div>
             </Reveal>
           </div>
