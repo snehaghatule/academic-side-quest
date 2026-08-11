@@ -22,8 +22,7 @@ export function Footer() {
               <em className="font-accent lowercase italic text-ember">next quest.</em>
             </p>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-mist">
-              questions we can&apos;t stop asking · papers worth rereading · people who get
-              it
+              one topic. one hour. not a cult.
             </p>
           </div>
 
