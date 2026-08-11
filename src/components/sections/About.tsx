@@ -31,9 +31,8 @@ export function About() {
             <div className="lg:sticky lg:top-32">
               <Reveal>
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
-                  <span className="display text-lg font-bold uppercase leading-none tracking-[-0.02em] text-mist sm:text-xl">
-                    the plot
-                  </span>
+                  <span className="label label-large text-ember">00 /</span>
+                  <span className="label label-large text-mist">the plot</span>
                 </div>
                 <h2 className="display mt-12 text-5xl font-bold uppercase leading-[0.95] tracking-[-0.02em] text-ember sm:text-6xl md:text-7xl">
                   Once upon a time,
