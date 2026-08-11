@@ -4,17 +4,17 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Founder() {
   return (
-    <section className="bg-paper px-5 pb-36 pt-36 sm:px-8 md:pb-48 md:pt-52">
-      <div className="mx-auto max-w-6xl">
+    <section className="bg-paper px-5 pb-40 pt-44 sm:px-8 md:pb-56 md:pt-64">
+      <div className="mx-auto max-w-7xl">
         <Reveal>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
-            <span className="label text-ember">01 /</span>
-            <span className="label text-mist">the lore</span>
+            <span className="label label-large text-ember">01 /</span>
+            <span className="label label-large text-mist">the lore</span>
           </div>
         </Reveal>
 
-        <div className="mt-20 grid items-start gap-16 lg:mt-24 lg:grid-cols-12 lg:gap-16">
-          <div className="lg:col-span-5">
+        <div className="mx-auto mt-20 flex max-w-fit flex-col items-center gap-16 lg:mt-24 lg:flex-row lg:items-center lg:gap-20">
+          <div className="w-full max-w-[416px] lg:w-[416px]">
             <Reveal>
               {founder.photo ? (
                 <Image
@@ -34,7 +34,7 @@ export function Founder() {
             </Reveal>
           </div>
 
-          <div className="lg:col-span-7">
+          <div className="w-full max-w-xl">
             <Reveal>
               <h3 className="display text-4xl font-bold uppercase leading-[0.9] tracking-[-0.01em] text-ink sm:text-5xl md:text-[3.5rem]">
                 {founder.name}
