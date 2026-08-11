@@ -4,8 +4,8 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Founder() {
   return (
-    <section className="bg-paper px-5 py-32 sm:px-8 md:py-40">
-      <div className="mx-auto max-w-7xl">
+    <section className="bg-paper px-5 pb-36 pt-36 sm:px-8 md:pb-48 md:pt-52">
+      <div className="mx-auto max-w-6xl">
         <Reveal>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
             <span className="label text-ember">01 /</span>
@@ -13,7 +13,7 @@ export function Founder() {
           </div>
         </Reveal>
 
-        <div className="mt-16 grid gap-16 lg:grid-cols-12 lg:gap-20">
+        <div className="mt-20 grid items-start gap-16 lg:mt-24 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
             <Reveal>
               {founder.photo ? (
@@ -34,7 +34,7 @@ export function Founder() {
             </Reveal>
           </div>
 
-          <div className="flex flex-col justify-center lg:col-span-7">
+          <div className="lg:col-span-7">
             <Reveal>
               <h3 className="display text-4xl font-bold uppercase leading-[0.9] tracking-[-0.01em] text-ink sm:text-5xl md:text-[3.5rem]">
                 {founder.name}
