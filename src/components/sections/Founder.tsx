@@ -5,16 +5,9 @@ import { Reveal } from "@/components/ui/Reveal";
 export function Founder() {
   return (
     <section className="bg-paper px-5 pb-40 pt-44 sm:px-8 md:pb-56 md:pt-64">
-      <div className="mx-auto max-w-7xl">
-        <Reveal>
-          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3">
-            <span className="label label-large text-ember">01 /</span>
-            <span className="label label-large text-mist">the lore</span>
-          </div>
-        </Reveal>
-
-        <div className="mx-auto mt-20 flex max-w-fit flex-col items-center gap-16 lg:mt-24 lg:flex-row lg:items-center lg:gap-20">
-          <div className="w-full max-w-[500px] lg:w-[500px]">
+      <div className="mx-auto max-w-[1100px]">
+        <div className="grid items-start gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-6">
             <Reveal>
               {founder.photo ? (
                 <Image
@@ -34,22 +27,26 @@ export function Founder() {
             </Reveal>
           </div>
 
-          <div className="w-full max-w-xl">
+          <div className="lg:col-span-6">
             <Reveal>
-              <h3 className="display text-4xl font-bold uppercase leading-[0.9] tracking-[-0.01em] text-ink sm:text-5xl md:text-[3.5rem]">
+              <div className="flex items-center gap-x-5">
+                <span className="label label-large text-ember">01 /</span>
+                <span className="label label-large text-mist">the lore</span>
+              </div>
+              <h3 className="display mt-6 text-4xl font-bold uppercase leading-[0.9] tracking-[-0.01em] text-ink sm:text-5xl md:text-[3.5rem]">
                 {founder.name}
               </h3>
-              <p className="font-accent mt-4 text-lg italic text-ember sm:text-xl">
+              <p className="font-accent mt-3 text-lg italic text-ember sm:text-xl">
                 {founder.role}
               </p>
-              <div className="mt-8 max-w-xl">
+              <div className="mt-6 max-w-xl">
                 {founder.bio.map((paragraph, i) => {
                   const parts = paragraph.split("Academic Side Quest");
                   return (
                     <p
                       key={i}
                       className={`text-base leading-relaxed text-mist ${
-                        i === 0 ? "" : "mt-6"
+                        i === 0 ? "" : "mt-5"
                       }`}
                     >
                       {parts.length > 1 ? (
