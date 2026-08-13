@@ -44,7 +44,7 @@ export function Founder() {
           label="the lore"
           title={founder.name}
           description={founder.role}
-          descriptionClassName="font-accent uppercase italic text-ink"
+          descriptionClassName="font-accent text-ink"
         />
 
         <div className="mt-14 grid gap-12 lg:grid-cols-12 lg:gap-16">
@@ -79,7 +79,7 @@ export function Founder() {
               {body(bio[4])}
               <p className="text-[0.95rem] leading-relaxed text-mist">{studentsAsk[0]}</p>
               <PullQuote>“{studentsAsk[1]}”</PullQuote>
-              <p className="font-accent text-xl italic text-ink">So we did.</p>
+              <p className="font-accent text-xl text-ink">So we did.</p>
               {body(bio[7])}
               {body(bio[8])}
             </Reveal>
