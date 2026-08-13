@@ -60,15 +60,6 @@ export function Founder() {
 
           <div className="lg:col-span-7">
             <Reveal className="flex flex-col gap-6">
-              <div>
-                <p className="display text-xl font-bold uppercase leading-none tracking-[-0.01em] text-ink sm:text-2xl">
-                  {founder.name}
-                  <span className="mx-3 font-display text-base font-semibold text-ember">—</span>
-                  <span className="align-middle font-display text-xs font-semibold tracking-[0.14em] text-ember">
-                    {founder.role}
-                  </span>
-                </p>
-              </div>
               {body(bio[0])}
               {body(bio[1])}
               {body(bio[2])}
@@ -83,6 +74,14 @@ export function Founder() {
               <p className="text-[0.95rem] leading-relaxed text-mist">So we did.</p>
               {body(bio[7])}
               {body(bio[8])}
+              <div className="mt-4 text-right">
+                <p className="font-accent text-2xl italic leading-snug text-ink sm:text-3xl">
+                  {founder.name}
+                </p>
+                <p className="mt-2 font-display text-xs font-semibold tracking-[0.14em] text-ember">
+                  {founder.role}
+                </p>
+              </div>
             </Reveal>
           </div>
         </div>
