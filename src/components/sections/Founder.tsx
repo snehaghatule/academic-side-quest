@@ -63,7 +63,8 @@ export function Founder() {
               <div>
                 <p className="display text-xl font-bold uppercase leading-none tracking-[-0.01em] text-ink sm:text-2xl">
                   {founder.name}
-                  <span className="ml-3 align-middle font-display text-xs font-semibold tracking-[0.14em] text-ember">
+                  <span className="mx-3 font-display text-base font-semibold text-ember">—</span>
+                  <span className="align-middle font-display text-xs font-semibold tracking-[0.14em] text-ember">
                     {founder.role}
                   </span>
                 </p>
