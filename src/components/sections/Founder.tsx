@@ -38,13 +38,13 @@ export function Founder() {
         <div className="mt-16 grid items-start gap-14 lg:grid-cols-12 lg:gap-20">
           <div className="lg:col-span-5">
             <Reveal>
-              <figure className="relative aspect-[3/4] w-full overflow-hidden">
+              <figure className="w-full overflow-hidden">
                 {founder.photo ? (
                   <Image
                     src={founder.photo}
                     alt={founder.name}
-                    width={800}
-                    height={1000}
+                    width={2765}
+                    height={3621}
                     className="h-auto w-full"
                   />
                 ) : (
