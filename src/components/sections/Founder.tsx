@@ -29,7 +29,7 @@ function PullQuote({ children }: { children: ReactNode }) {
 
 export function Founder() {
   const bio = founder.bio;
-  const [refuses, ...rabbitRest] = bio[2].split(". ");
+  const rabbitRest = bio[2].split(". ").slice(1).join(". ");
   const studentsAsk = bio[5].split('"');
 
   const body = (text: string, first = false) => (
@@ -86,7 +86,7 @@ export function Founder() {
               {body(bio[1])}
 
               <PullQuote>Psychology refuses to stay where you put it.</PullQuote>
-              {body(rabbitRest.join(". "))}
+              {body(rabbitRest)}
               {body(bio[3])}
               {body(bio[4])}
 
