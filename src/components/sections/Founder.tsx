@@ -17,12 +17,26 @@ function renderBrand(text: string): ReactNode {
   );
 }
 
+function renderName(text: string): ReactNode {
+  const parts = text.split("Sneha Ghatule");
+  if (parts.length < 2) return text;
+  return (
+    <>
+      {parts[0]}
+      <span className="display text-[1.12em] font-bold uppercase leading-none text-ink">
+        Sneha Ghatule
+      </span>
+      {parts[1]}
+    </>
+  );
+}
+
 export function Founder() {
   const bio = founder.bio;
   const studentsAsk = bio[5].split('"');
 
-  const body = (text: string) => (
-    <p className="text-[0.95rem] leading-relaxed text-mist">{renderBrand(text)}</p>
+  const body = (text: string, render: (t: string) => ReactNode = renderBrand) => (
+    <p className="text-[0.95rem] leading-relaxed text-mist">{render(text)}</p>
   );
 
   return (
@@ -60,7 +74,7 @@ export function Founder() {
 
           <div className="lg:col-span-7">
             <Reveal className="flex flex-col gap-6">
-              {body(bio[0])}
+              {body(bio[0], renderName)}
               {body(bio[1])}
               {body(bio[2])}
               {body(bio[3])}
@@ -74,13 +88,6 @@ export function Founder() {
               <p className="text-[0.95rem] leading-relaxed text-mist">So we did.</p>
               {body(bio[7])}
               {body(bio[8])}
-              <div className="mt-16 text-right">
-                <p className="font-display font-semibold uppercase leading-relaxed text-mist">
-                  <span className="text-base tracking-[0.14em]">{founder.name}</span>
-                  <br />
-                  <span className="text-xs tracking-[0.14em]">{founder.role}</span>
-                </p>
-              </div>
             </Reveal>
           </div>
         </div>
