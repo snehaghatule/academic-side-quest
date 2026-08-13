@@ -23,7 +23,7 @@ function renderName(text: string): ReactNode {
   return (
     <>
       {parts[0]}
-      <span className="display text-[1.12em] font-bold uppercase leading-none text-ink">
+      <span className="display marker text-[1.18em] font-bold uppercase leading-none text-ink">
         Sneha Ghatule
       </span>
       {parts[1]}
