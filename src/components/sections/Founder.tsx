@@ -35,17 +35,17 @@ export function Founder() {
           </h2>
         </div>
 
-        <div className="mt-16 grid gap-14 lg:grid-cols-12 lg:gap-20">
+        <div className="mt-16 grid items-start gap-14 lg:grid-cols-12 lg:gap-20">
           <div className="lg:col-span-5">
-            <Reveal className="h-full">
-              <figure className="relative aspect-[3/4] w-full overflow-hidden lg:h-full">
+            <Reveal>
+              <figure className="relative aspect-[3/4] w-full overflow-hidden">
                 {founder.photo ? (
                   <Image
                     src={founder.photo}
                     alt={founder.name}
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                    className="object-cover"
+                    width={800}
+                    height={1000}
+                    className="h-auto w-full"
                   />
                 ) : (
                   <div className="flex h-full w-full items-center justify-center border border-dashed border-line bg-card p-8">
