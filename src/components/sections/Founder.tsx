@@ -39,7 +39,13 @@ export function Founder() {
   return (
     <section className="bg-paper px-5 py-28 sm:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
-        <SectionHeading index="01" label="the lore" title={founder.name} description={founder.role} />
+        <SectionHeading
+          index="01"
+          label="the lore"
+          title={founder.name}
+          description={founder.role}
+          descriptionClassName="font-accent uppercase italic text-ink"
+        />
 
         <div className="mt-14 grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-6">

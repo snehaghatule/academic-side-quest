@@ -5,12 +5,14 @@ export function SectionHeading({
   label,
   title,
   description,
+  descriptionClassName = "",
   className = "",
 }: {
   index?: string;
   label: string;
   title: string;
   description?: string;
+  descriptionClassName?: string;
   className?: string;
 }) {
   return (
@@ -24,7 +26,7 @@ export function SectionHeading({
           {title}
         </h2>
         {description ? (
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-mist sm:text-lg">
+          <p className={`mt-6 max-w-2xl text-base leading-relaxed text-mist sm:text-lg ${descriptionClassName}`}>
             {description}
           </p>
         ) : null}
