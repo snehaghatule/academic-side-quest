@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { ReactNode } from "react";
 import { founder } from "@/data/quests";
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionHeading } from "@/components/sections/SectionHeading";
 
 function renderBrand(text: string): ReactNode {
   const parts = text.split("Academic Side Quest");
@@ -40,21 +41,7 @@ export function Founder() {
   return (
     <section className="bg-paper px-5 py-28 sm:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
-        <Reveal>
-          <div className="flex items-center gap-x-5">
-            <span className="label label-large text-ember">01 /</span>
-            <span className="label label-large text-mist">the lore</span>
-          </div>
-        </Reveal>
-
-        <Reveal>
-          <h1 className="display mt-10 max-w-5xl text-5xl font-bold uppercase leading-[0.85] tracking-[-0.02em] text-ink sm:text-6xl md:text-7xl">
-            {founder.name}
-          </h1>
-          <p className="font-accent mt-6 text-lg uppercase italic text-ember sm:text-xl">
-            {founder.role}
-          </p>
-        </Reveal>
+        <SectionHeading index="01" label="the lore" title={founder.name} description={founder.role} />
 
         <div className="mt-16 grid items-start gap-14 lg:grid-cols-12 lg:gap-20">
           <div className="lg:col-span-5">
