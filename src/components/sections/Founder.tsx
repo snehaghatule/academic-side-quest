@@ -20,8 +20,6 @@ function renderBrand(text: string): ReactNode {
 export function Founder() {
   const bio = founder.bio;
   const studentsAsk = bio[5].split('"');
-  const [firstName, ...rest] = founder.name.split(" ");
-  const lastName = rest.join(" ");
 
   const body = (text: string) => (
     <p className="text-[0.95rem] leading-relaxed text-mist">{renderBrand(text)}</p>
@@ -30,14 +28,12 @@ export function Founder() {
   return (
     <section className="bg-paper px-5 py-28 sm:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
-        <h2 className="flex flex-wrap items-baseline justify-center gap-x-5 gap-y-2 text-center">
-          <span className="display text-4xl font-bold uppercase leading-none tracking-[0.06em] text-ember sm:text-5xl md:text-6xl">
-            01 /
-          </span>
-          <span className="display text-4xl font-bold uppercase leading-none tracking-[0.06em] text-mist sm:text-5xl md:text-6xl">
+        <div className="flex flex-col items-center">
+          <span className="label label-large text-ember">01 /</span>
+          <h2 className="display mt-4 text-4xl font-bold uppercase leading-none tracking-[0.06em] text-ink sm:text-5xl md:text-6xl">
             the lore
-          </span>
-        </h2>
+          </h2>
+        </div>
 
         <div className="mt-16 grid items-start gap-14 lg:grid-cols-12 lg:gap-20">
           <div className="lg:col-span-5">
@@ -58,14 +54,13 @@ export function Founder() {
                     </p>
                   </div>
                 )}
+                <div className="absolute inset-x-0 top-0 flex flex-col items-center bg-gradient-to-b from-black/70 via-black/25 to-transparent px-6 pb-16 pt-8 text-center">
+                  <p className="display text-2xl font-bold uppercase leading-tight tracking-[-0.01em] text-ink sm:text-3xl">
+                    {founder.name}
+                  </p>
+                  <p className="mt-4 text-sm text-ink/75">{founder.role}</p>
+                </div>
               </figure>
-              <div className="mt-5">
-                <h3 className="display text-3xl font-bold uppercase leading-[0.9] tracking-[-0.02em] text-ink sm:text-4xl">
-                  {firstName}
-                  {lastName ? <span className="block pl-8">{lastName}</span> : null}
-                </h3>
-                <p className="font-accent mt-3 text-lg text-ink">{founder.role}</p>
-              </div>
             </Reveal>
           </div>
 
