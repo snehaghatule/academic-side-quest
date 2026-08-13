@@ -78,8 +78,7 @@ export function Founder() {
               {body(bio[3])}
               {body(bio[4])}
               <p className="text-[0.95rem] leading-relaxed text-mist">{studentsAsk[0]}</p>
-              <PullQuote>“{studentsAsk[1]}”</PullQuote>
-              <p className="font-accent text-xl text-ink">So we did.</p>
+              <PullQuote>“{studentsAsk[1]}” So we did.</PullQuote>
               {body(bio[7])}
               {body(bio[8])}
             </Reveal>
