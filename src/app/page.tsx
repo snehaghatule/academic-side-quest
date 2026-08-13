@@ -42,7 +42,9 @@ export default function Home() {
             />
             <div className="absolute inset-x-0 bottom-0 flex flex-col items-center bg-gradient-to-t from-black/70 via-black/25 to-transparent px-6 pb-8 pt-20 text-center sm:pb-10">
               <p className="display max-w-xl text-2xl font-bold uppercase leading-tight tracking-[-0.01em] text-ink sm:text-3xl">
-                Archival footage of us figuring things out.
+                Archival footage of us
+                <br />
+                figuring things out.
               </p>
               <p className="label mt-4 text-ink/75">
                 Academic Side Quest, 16 July 2025.
