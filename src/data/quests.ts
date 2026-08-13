@@ -15,7 +15,7 @@ export const currentQuest = {
   date: "Friday, 28 August 2026 · 7:15 PM IST",
   tagline: "AI, education, and cognitive outsourcing.",
   description:
-    "What happens when machines can remember for us, write for us, reason with us, and increasingly think alongside us? This month we're going down the rabbit hole of AI, education, and cognitive outsourcing — and what, in a world where almost anything can be outsourced, should remain ours.",
+    "What happens when machines can remember for us, write for us, and increasingly think alongside us? This month we're going down the rabbit hole of AI, education, and cognitive outsourcing — and what, in a world where almost anything can be outsourced, should remain ours.",
   topics: [
     "Cognitive outsourcing",
     "AI & education",
