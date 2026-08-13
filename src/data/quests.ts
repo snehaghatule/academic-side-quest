@@ -15,7 +15,7 @@ export const currentQuest = {
   date: "Friday, 28 August 2026 · 7:15 PM IST",
   tagline: "AI, education, and cognitive outsourcing.",
   description:
-    "What happens when machines can remember for us, write for us, reason with us, and increasingly think alongside us? This month we're going down the rabbit hole of AI, education, and cognitive outsourcing — and what, in a world where almost anything can be outsourced, should remain ours.",
+    "As AI gets woven into how we learn, write, and think, the easy question is whether it helps. The uncomfortable one is what happens to the struggle — the fumbling, the wrong turns, the effort that turns borrowed answers into knowledge we actually own. When a machine can remember, write, and reason with us, what should we insist on doing ourselves? This month we're going down the rabbit hole of AI, education, and cognitive outsourcing: productive struggle, the illusion of competence, and what 'knowing' means when a machine is faster.",
   topics: [
     "Cognitive outsourcing",
     "AI & education",
