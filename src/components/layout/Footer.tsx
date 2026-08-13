@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { currentQuest } from "@/data/quests";
 
 const footerLinks = [
   { label: "The Main Character Page", href: "/" },
@@ -60,7 +61,7 @@ export function Footer() {
             <div>
               <p className="label text-xs text-mist/70">Currently</p>
               <p className="mt-5 text-sm leading-relaxed text-ink-soft">
-                thinking about the psychology of belonging
+                thinking about {currentQuest.tagline.toLowerCase()}
               </p>
               <p className="mt-4 text-sm text-mist">
                 meetings: twice a month,
