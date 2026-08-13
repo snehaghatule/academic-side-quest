@@ -33,7 +33,7 @@ export function Founder() {
           index="01"
           label="the lore"
           title="The Story"
-          description="How a college psychology club became twice-a-month side quest."
+          description="The origin of our favorite side quest."
         />
 
         <div className="mt-16 grid items-start gap-14 border-t border-line pt-16 lg:grid-cols-12 lg:gap-20">
