@@ -4,7 +4,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Founder() {
   return (
-    <section className="bg-paper px-5 pb-40 pt-44 sm:px-8 md:pb-56 md:pt-64">
+    <section className="bg-paper px-5 py-28 sm:px-8 md:py-40">
       <div className="mx-auto max-w-[1100px]">
         <div className="grid items-start gap-10 lg:grid-cols-12">
           <div className="lg:col-span-6">
