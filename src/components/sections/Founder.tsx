@@ -64,7 +64,6 @@ export function Founder() {
                 <p className="display text-4xl font-bold uppercase leading-none tracking-[-0.02em] text-ink sm:text-5xl md:text-6xl">
                   {founder.name}
                 </p>
-                <span className="h-px w-8 bg-line" />
                 <p className="font-accent text-lg italic text-ember sm:text-xl">
                   {founder.role}
                 </p>
