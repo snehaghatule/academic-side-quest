@@ -102,7 +102,6 @@ export const founder = {
     'Instead, my students asked, "Can we still meet?"',
     "So we did.",
     "What began as an informal psychology club grew into a small research community that now meets twice a month to read papers, unpack ideas, challenge assumptions, share questions, and occasionally disappear spectacularly far down a research rabbit hole.",
-    "I've always told my students that the moment you work up the nerve to ask a 'stupid' question, it stops being one. It becomes a question the whole room gets to think about.",
     "That, really, is the point of this space. Welcome to Academic Side Quest.",
   ],
 };
