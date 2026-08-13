@@ -28,11 +28,9 @@ export function Founder() {
   return (
     <section className="bg-paper px-5 py-28 sm:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3">
           <span className="label label-large text-ember">01 /</span>
-          <h2 className="display mt-4 text-4xl font-bold uppercase leading-none tracking-[0.06em] text-ink sm:text-5xl md:text-6xl">
-            the lore
-          </h2>
+          <span className="label label-large text-mist">the lore</span>
         </div>
 
         <div className="mt-16 grid items-start gap-14 lg:grid-cols-12 lg:gap-20">
