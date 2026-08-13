@@ -104,7 +104,7 @@ export const previousQuests: Quest[] = [
 
 export const founder = {
   name: "Sneha Ghatule",
-  role: "founder & curious human",
+  role: "Founder & Curious Human",
   photo: "/images/founder.jpg",
   bio: [
     "Hi, I've always loved teaching, mostly because it gives me an excuse to keep learning.",
