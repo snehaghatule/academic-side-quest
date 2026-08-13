@@ -54,20 +54,20 @@ export function Founder() {
                     </p>
                   </div>
                 )}
-                <div className="absolute inset-x-0 top-0 flex flex-col items-center bg-gradient-to-b from-black/80 via-black/40 to-transparent px-6 pb-16 pt-8 text-center">
-                  <div className="bg-ink/10 px-6 py-8">
-                    <p className="display max-w-xl text-2xl font-bold uppercase leading-tight tracking-[-0.01em] text-ink sm:text-3xl">
-                      {founder.name}
-                    </p>
-                    <p className="mt-2 text-sm text-ink/75">{founder.role}</p>
-                  </div>
-                </div>
               </figure>
             </Reveal>
           </div>
 
           <div className="lg:col-span-7">
             <Reveal className="flex flex-col gap-6">
+              <div>
+                <p className="display text-xl font-bold uppercase leading-none tracking-[-0.01em] text-ink sm:text-2xl">
+                  {founder.name}
+                </p>
+                <p className="mt-2 font-display text-xs font-semibold tracking-[0.14em] text-ember">
+                  {founder.role}
+                </p>
+              </div>
               {body(bio[0])}
               {body(bio[1])}
               {body(bio[2])}
