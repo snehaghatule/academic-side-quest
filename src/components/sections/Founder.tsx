@@ -33,9 +33,7 @@ export function Founder() {
           <span className="label label-large text-mist">the lore</span>
         </div>
 
-        <div className="mt-8 border-t border-line" />
-
-        <div className="mt-16 grid items-start gap-14 lg:grid-cols-12 lg:gap-20">
+        <div className="mt-16 grid items-start gap-14 border-t border-line pt-16 lg:grid-cols-12 lg:gap-20">
           <div className="lg:col-span-5">
             <Reveal>
               <figure className="w-full overflow-hidden">
