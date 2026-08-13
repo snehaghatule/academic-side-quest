@@ -30,7 +30,7 @@ export function Founder() {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center">
           <span className="label label-large text-ember">01 /</span>
-          <h2 className="display mt-4 text-4xl font-bold uppercase leading-none tracking-[0.06em] text-mist sm:text-5xl md:text-6xl">
+          <h2 className="display mt-4 text-4xl font-bold uppercase leading-none tracking-[0.06em] text-ink sm:text-5xl md:text-6xl">
             the lore
           </h2>
         </div>
