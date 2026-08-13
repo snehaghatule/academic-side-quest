@@ -32,14 +32,22 @@ export default function Home() {
       {/* photograph */}
       <section className="bg-paper px-5 sm:px-8">
         <div className="mx-auto max-w-5xl">
-          <div className="aspect-[3/2] w-full overflow-hidden border border-line">
+          <div className="relative aspect-[3/2] w-full overflow-hidden border border-line">
             <Image
               src="/images/home-photo.jpg"
               alt=""
-              width={1448}
-              height={1086}
-              className="h-full w-full object-cover object-center"
+              fill
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              className="object-cover object-center"
             />
+            <div className="absolute inset-x-0 bottom-0 flex flex-col items-center bg-gradient-to-t from-black/70 via-black/25 to-transparent px-6 pb-8 pt-20 text-center sm:pb-10">
+              <p className="font-accent max-w-xl text-2xl font-semibold italic leading-snug text-ink sm:text-3xl">
+                Archival footage of us figuring things out.
+              </p>
+              <p className="label mt-4 text-ink/75">
+                Academic Side Quest, 16 July 2025.
+              </p>
+            </div>
           </div>
         </div>
       </section>
