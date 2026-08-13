@@ -8,7 +8,7 @@ const footerLinks = [
   { label: "Unlock Access", href: "/join" },
 ];
 
-const socials = [{ label: "Substack", href: "#" }];
+const socials = [{ label: "Substack", href: "https://substack.com/@academicsidequest" }];
 
 export function Footer() {
   return (
