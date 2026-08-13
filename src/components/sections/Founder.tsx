@@ -17,29 +17,6 @@ function renderBrand(text: string): ReactNode {
   );
 }
 
-function renderName(text: string): ReactNode {
-  const parts = text.split("Sneha Ghatule");
-  if (parts.length < 2) return text;
-  const roleParts = parts[1].split(", founder and curious human");
-  return (
-    <>
-      {parts[0]}
-      <span className="display text-[1.18em] font-bold uppercase leading-none text-ink">
-        Sneha Ghatule
-      </span>
-      {roleParts.length < 2 ? (
-        parts[1]
-      ) : (
-        <>
-          {roleParts[0]}
-          <span className="text-ember">{", founder and curious human"}</span>
-          {roleParts[1]}
-        </>
-      )}
-    </>
-  );
-}
-
 export function Founder() {
   const bio = founder.bio;
   const studentsAsk = bio[5].split('"');
