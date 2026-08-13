@@ -68,10 +68,10 @@ export function Founder() {
               {body(bio[3])}
               {body(bio[4])}
               <p className="text-[0.95rem] leading-relaxed text-mist">{studentsAsk[0]}</p>
-              <p className="font-accent text-2xl font-medium leading-snug text-ink sm:text-3xl">
-                <span className="italic">“{studentsAsk[1]}”</span>{" "}
-                <span className="not-italic">So we did.</span>
+              <p className="font-accent text-2xl font-medium italic leading-snug text-ink sm:text-3xl">
+                “{studentsAsk[1]}”
               </p>
+              <p className="text-[0.95rem] leading-relaxed text-mist">So we did.</p>
               {body(bio[7])}
               {body(bio[8])}
             </Reveal>
