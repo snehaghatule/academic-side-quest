@@ -74,12 +74,11 @@ export function Founder() {
               <p className="text-[0.95rem] leading-relaxed text-mist">So we did.</p>
               {body(bio[7])}
               {body(bio[8])}
-              <div className="mt-4 text-right">
-                <p className="font-accent text-2xl italic leading-snug text-ink sm:text-3xl">
+              <div className="mt-16 text-right">
+                <p className="font-display text-xs font-semibold uppercase leading-relaxed tracking-[0.14em] text-mist">
                   {founder.name}
-                </p>
-                <p className="mt-2 font-display text-xs font-semibold tracking-[0.14em] text-ember">
-                  {founder.role}
+                  <br />
+                  Founder / Academic Side Quest
                 </p>
               </div>
             </Reveal>
