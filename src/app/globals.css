@@ -83,6 +83,11 @@
     font-size: 1.05rem;
   }
 
+  /* extra-large label for page section markers */
+  .label-xl {
+    font-size: 1.35rem;
+  }
+
   /* header nav label sizes (defined after .label so they override it) */
   .label-nav {
     font-size: 0.9rem;
