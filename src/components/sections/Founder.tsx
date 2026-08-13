@@ -63,9 +63,9 @@ export function Founder() {
               <div>
                 <p className="display text-xl font-bold uppercase leading-none tracking-[-0.01em] text-ink sm:text-2xl">
                   {founder.name}
-                </p>
-                <p className="mt-2 font-display text-xs font-semibold tracking-[0.14em] text-ember">
-                  {founder.role}
+                  <span className="ml-3 align-middle font-display text-xs font-semibold tracking-[0.14em] text-ember">
+                    {founder.role}
+                  </span>
                 </p>
               </div>
               {body(bio[0])}
