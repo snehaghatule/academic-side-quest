@@ -78,7 +78,7 @@ export function Founder() {
                 <p className="font-display text-xs font-semibold uppercase leading-relaxed tracking-[0.14em] text-mist">
                   {founder.name}
                   <br />
-                  Founder / Academic Side Quest
+                  {founder.role}
                 </p>
               </div>
             </Reveal>
