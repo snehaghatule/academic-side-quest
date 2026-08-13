@@ -56,7 +56,7 @@ export function Founder() {
                 )}
                 <div className="absolute inset-x-0 top-0 flex flex-col items-center bg-gradient-to-b from-black/80 via-black/40 to-transparent px-6 pb-16 pt-8 text-center">
                   <div className="bg-ink/10 px-6 py-8">
-                    <p className="display text-4xl font-bold uppercase leading-[0.95] tracking-[-0.01em] text-ink sm:text-5xl">
+                    <p className="display max-w-xl text-2xl font-bold uppercase leading-tight tracking-[-0.01em] text-ink sm:text-3xl">
                       {founder.name}
                     </p>
                     <p className="mt-2 text-sm text-ink/75">{founder.role}</p>
