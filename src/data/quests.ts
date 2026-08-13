@@ -102,7 +102,7 @@ export const founder = {
     'Instead, my students asked, "Can we still meet?"',
     "So we did.",
     "What began as an informal psychology club grew into a small research community that now meets twice a month to read papers, unpack ideas, challenge assumptions, share questions, and occasionally disappear spectacularly far down a research rabbit hole.",
-    "That, really, is the point of this space. Welcome to Academic Side Quest.",
+    "Welcome to Academic Side Quest.",
   ],
 };
 
