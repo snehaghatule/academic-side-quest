@@ -24,7 +24,7 @@ function renderName(text: string): ReactNode {
   return (
     <>
       {parts[0]}
-      <span className="display marker text-[1.18em] font-bold uppercase leading-none text-ink">
+      <span className="display text-[1.18em] font-bold uppercase leading-none text-ink">
         Sneha Ghatule
       </span>
       {roleParts.length < 2 ? (
@@ -44,8 +44,8 @@ export function Founder() {
   const bio = founder.bio;
   const studentsAsk = bio[5].split('"');
 
-  const body = (text: string, render: (t: string) => ReactNode = renderBrand) => (
-    <p className="text-[0.95rem] leading-relaxed text-mist">{render(text)}</p>
+  const body = (text: string) => (
+    <p className="text-[0.95rem] leading-relaxed text-mist">{renderBrand(text)}</p>
   );
 
   return (
@@ -83,7 +83,15 @@ export function Founder() {
 
           <div className="lg:col-span-7">
             <Reveal className="flex flex-col gap-6">
-              {body(bio[0], renderName)}
+              <div className="flex flex-col gap-2 pb-2">
+                <p className="display text-2xl font-bold uppercase leading-none tracking-[-0.02em] text-ink sm:text-3xl">
+                  {founder.name}
+                </p>
+                <p className="font-accent text-lg italic text-ember sm:text-xl">
+                  {founder.role}
+                </p>
+              </div>
+              {body(bio[0])}
               {body(bio[1])}
               {body(bio[2])}
               {body(bio[3])}

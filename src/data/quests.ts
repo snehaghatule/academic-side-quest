@@ -107,7 +107,7 @@ export const founder = {
   role: "Founder & Curious Human",
   photo: "/images/founder.jpg",
   bio: [
-    "Hi, I'm Sneha Ghatule, founder and curious human. I've always loved teaching, mostly because it gives me an excuse to keep learning.",
+    "Hi, I've always loved teaching, mostly because it gives me an excuse to keep learning.",
     "Over the last few years, I've taught psychology in higher education, worked in mental health, developed curricula, and, most importantly, had conversations with students that rarely stayed neatly inside the syllabus.",
     "Psychology refuses to stay where you put it. It is less a collection of settled facts than a set of complex, evolving models for understanding why people feel, relate, and suffer the way they do. And the best way to learn it, is by wrestling with those ideas out loud.",
     "In June 2025, I started a psychology club at the college where I taught. Apparently, the conversations were getting a little too interesting to leave in the classroom.",
