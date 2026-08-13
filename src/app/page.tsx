@@ -31,14 +31,14 @@ export default function Home() {
 
       {/* photograph */}
       <section className="bg-paper px-5 sm:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="aspect-[3/2] w-full overflow-hidden border border-line">
+        <div className="mx-auto max-w-5xl">
+          <div className="overflow-hidden border border-line">
             <Image
               src="/images/home-photo.jpg"
               alt=""
-              width={1600}
-              height={1067}
-              className="h-full w-full object-cover"
+              width={3013}
+              height={1401}
+              className="h-auto w-full"
             />
           </div>
         </div>
