@@ -60,10 +60,11 @@ export function Founder() {
 
           <div className="lg:col-span-7">
             <Reveal className="flex flex-col gap-6">
-              <div className="flex flex-col gap-2 pb-2">
+              <div className="flex flex-wrap items-center gap-x-4 pb-2">
                 <p className="display text-2xl font-bold uppercase leading-none tracking-[-0.02em] text-ink sm:text-3xl">
                   {founder.name}
                 </p>
+                <span className="h-px w-8 bg-line" />
                 <p className="font-accent text-lg italic text-ember sm:text-xl">
                   {founder.role}
                 </p>
