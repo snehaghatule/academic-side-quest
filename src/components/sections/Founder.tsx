@@ -20,8 +20,8 @@ function renderBrand(text: string): ReactNode {
 
 function PullQuote({ children }: { children: ReactNode }) {
   return (
-    <blockquote className="my-16 border-l-2 border-ember py-2 pl-8 sm:pl-12">
-      <p className="font-accent text-3xl font-semibold italic leading-snug text-ink sm:text-4xl md:text-[2.7rem]">
+    <blockquote className="my-10 border-l-2 border-ember pl-6">
+      <p className="font-accent text-2xl font-semibold italic leading-snug text-ink sm:text-3xl">
         {children}
       </p>
     </blockquote>
@@ -32,10 +32,8 @@ export function Founder() {
   const bio = founder.bio;
   const studentsAsk = bio[5].split('"');
 
-  const body = (text: string, first = false) => (
-    <p className={`text-base leading-relaxed text-mist ${first ? "" : "mt-6"}`}>
-      {renderBrand(text)}
-    </p>
+  const body = (text: string) => (
+    <p className="text-[0.95rem] leading-relaxed text-mist">{renderBrand(text)}</p>
   );
 
   return (
@@ -43,8 +41,8 @@ export function Founder() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading index="01" label="the lore" title={founder.name} description={founder.role} />
 
-        <div className="mt-16 grid items-start gap-14 lg:grid-cols-12 lg:gap-20">
-          <div className="lg:col-span-5">
+        <div className="mt-14 grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-6">
             <Reveal>
               <div className="lg:sticky lg:top-28">
                 {founder.photo ? (
@@ -66,19 +64,17 @@ export function Founder() {
             </Reveal>
           </div>
 
-          <div className="lg:col-span-7">
-            <Reveal>
-              {body(bio[0], true)}
+          <div className="lg:col-span-6">
+            <Reveal className="flex h-full flex-col gap-4 lg:gap-0 lg:justify-between">
+              {body(bio[0])}
               {body(bio[1])}
               {body(bio[2])}
               {body(bio[3])}
               {body(bio[4])}
-
-              <p className="mt-6 text-base leading-relaxed text-mist">{studentsAsk[0]}</p>
+              <p className="text-[0.95rem] leading-relaxed text-mist">{studentsAsk[0]}</p>
               <PullQuote>“{studentsAsk[1]}”</PullQuote>
-              <p className="font-accent text-2xl italic text-ink">So we did.</p>
-
-              <div className="mt-6">{body(bio[7])}</div>
+              <p className="font-accent text-xl italic text-ink">So we did.</p>
+              {body(bio[7])}
               {body(bio[8])}
             </Reveal>
           </div>
