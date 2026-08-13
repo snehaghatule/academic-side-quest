@@ -29,8 +29,8 @@ export function Founder() {
     <section className="bg-paper px-5 py-28 sm:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3">
-          <span className="label label-xl text-ember">01 /</span>
-          <span className="label label-xl text-mist">the lore</span>
+          <span className="label label-large text-ember">01 /</span>
+          <span className="label label-large text-mist">the lore</span>
         </div>
 
         <div className="mt-16 grid items-start gap-14 lg:grid-cols-12 lg:gap-20">
