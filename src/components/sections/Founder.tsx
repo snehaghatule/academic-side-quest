@@ -38,7 +38,7 @@ export function Founder() {
           </h2>
           <p className="mt-7 max-w-md text-balance text-lg leading-relaxed text-ink-soft">
             <span className="marker text-ink">
-              How a college psychology club became a twice-monthly side quest.
+              How a classroom psychology club became a twice-a-month side quest.
             </span>
           </p>
         </Reveal>
