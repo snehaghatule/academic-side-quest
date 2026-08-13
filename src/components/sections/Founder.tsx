@@ -28,16 +28,20 @@ export function Founder() {
   return (
     <section className="bg-paper px-5 py-28 sm:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
-        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3">
-          <span className="label label-large text-ember">01 /</span>
-          <span className="label label-large text-mist">the lore</span>
-        </div>
-
-        <h2 className="display mt-6 text-5xl font-bold uppercase leading-[0.95] tracking-[-0.02em] text-ember sm:text-6xl md:text-7xl">
-          The
-          <br />
-          <em className="font-accent lowercase italic">Story</em>
-        </h2>
+        <Reveal>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+            <span className="label label-large text-ember">01 /</span>
+            <span className="label label-large text-mist">the lore</span>
+          </div>
+          <h2 className="display mt-6 text-5xl font-bold uppercase leading-[0.95] tracking-[-0.02em] text-ember sm:text-6xl md:text-7xl">
+            Our Story
+          </h2>
+          <p className="mt-7 max-w-md text-balance text-lg leading-relaxed text-ink-soft">
+            <span className="marker text-ink">
+              How a classroom psychology club became a twice-monthly side quest.
+            </span>
+          </p>
+        </Reveal>
 
         <div className="mt-16 grid items-start gap-14 border-t border-line pt-16 lg:grid-cols-12 lg:gap-20">
           <div className="lg:col-span-5">
