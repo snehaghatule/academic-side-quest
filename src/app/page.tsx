@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
@@ -28,13 +29,17 @@ export default function Home() {
     <>
       <Hero />
 
-      {/* photograph space */}
+      {/* photograph */}
       <section className="bg-paper px-5 sm:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="flex aspect-[3/2] w-full items-center justify-center border border-dashed border-line bg-card/60">
-            <p className="label max-w-xs text-center text-mist/70">
-              a photograph will live here
-            </p>
+          <div className="aspect-[3/2] w-full overflow-hidden border border-line">
+            <Image
+              src="/images/home-photo.jpg"
+              alt=""
+              width={1600}
+              height={1067}
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </section>
