@@ -32,7 +32,7 @@ export function Founder() {
         <SectionHeading
           index="01"
           label="the lore"
-          title="The Story"
+          title="Our Story"
           description="The origin of our favorite side quest."
         />
 
