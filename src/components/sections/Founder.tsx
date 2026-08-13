@@ -33,6 +33,10 @@ export function Founder() {
           <span className="label label-large text-mist">the lore</span>
         </div>
 
+        <h2 className="display mt-6 text-center text-5xl font-bold uppercase leading-[0.95] tracking-[-0.02em] text-ink sm:text-6xl md:text-7xl">
+          The Story
+        </h2>
+
         <div className="mt-16 grid items-start gap-14 border-t border-line pt-16 lg:grid-cols-12 lg:gap-20">
           <div className="lg:col-span-5">
             <Reveal>
