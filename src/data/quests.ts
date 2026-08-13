@@ -11,12 +11,17 @@ export type Quest = {
 
 export const currentQuest = {
   number: "08",
-  title: "Why We All Feel Like Everyone Else Has It Figured Out",
+  title: "The Brain–Computer Interface (Neural Prosthetics)",
   date: "Thursday, 13 August 2026 · 7:15 PM IST",
-  tagline: "Social comparison, the spotlight effect, and our very loud inner critic.",
+  tagline: "Decoding intention from neurons, and machines that bridge brain and body.",
   description:
-    "Everyone else seems calm, sorted, and together — so why aren't we? This month we're going down the rabbit hole of social comparison and the sneaky ways our brains inflate how put-together other people are.",
-  topics: ["Social comparison", "Impostor syndrome", "The spotlight effect", "Belonging"],
+    "A person who can't move can now move a robotic arm — or type — with thought alone. How does a chip turn neurons into action, and what does it mean when a machine can read your mind? This month we're going down the rabbit hole of brain–computer interfaces and neural prosthetics.",
+  topics: [
+    "Neural prosthetics",
+    "Brain–computer interfaces",
+    "Decoding intention",
+    "Neuroplasticity",
+  ],
   note: "okay but hear me out",
   registerLabel: "Reserve a spot",
 };
