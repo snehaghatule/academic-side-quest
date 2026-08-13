@@ -10,17 +10,17 @@ export type Quest = {
 /* ------------------------------- current -------------------------------- */
 
 export const currentQuest = {
-  number: "08",
-  title: "The Brain–Computer Interface (Neural Prosthetics)",
-  date: "Thursday, 13 August 2026 · 7:15 PM IST",
-  tagline: "Decoding intention from neurons, and machines that bridge brain and body.",
+  number: "09",
+  title: "What Should Remain Ours?",
+  date: "Friday, 28 August 2026 · 7:15 PM IST",
+  tagline: "AI, education, and cognitive outsourcing.",
   description:
-    "A person who can't move can now move a robotic arm — or type — with thought alone. How does a chip turn neurons into action, and what does it mean when a machine can read your mind? This month we're going down the rabbit hole of brain–computer interfaces and neural prosthetics.",
+    "What happens when machines can remember for us, write for us, reason with us, and increasingly think alongside us? This month we're going down the rabbit hole of AI, education, and cognitive outsourcing — and what, in a world where almost anything can be outsourced, should remain ours.",
   topics: [
-    "Neural prosthetics",
-    "Brain–computer interfaces",
-    "Decoding intention",
-    "Neuroplasticity",
+    "Cognitive outsourcing",
+    "AI & education",
+    "The value of struggle",
+    "Creativity & originality",
   ],
   note: "okay but hear me out",
   registerLabel: "Reserve a spot",
@@ -29,6 +29,19 @@ export const currentQuest = {
 /* ------------------------------ previous -------------------------------- */
 
 export const previousQuests: Quest[] = [
+  {
+    number: "08",
+    title: "The Brain–Computer Interface (Neural Prosthetics)",
+    description:
+      "We went down the rabbit hole of brain–computer interfaces and neural prosthetics — how a chip decodes intention from neurons to move a cursor, a robotic arm, or a single typed word, and what it means when a machine can read your mind.",
+    topics: [
+      "Neural prosthetics",
+      "Brain–computer interfaces",
+      "Decoding intention",
+      "Neuroplasticity",
+    ],
+    note: "okay but hear me out",
+  },
   {
     number: "07",
     title: "Why Humans Can't Stop Overthinking",
